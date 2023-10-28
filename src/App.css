@@ -1,23 +1,33 @@
 
 .header{
     width: 100vw;
-    background-color: gainsboro;
+    /* background-color: gainsboro; */
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80px;
     gap: 10px;
     margin: 0;
+    z-index: 10;
+    box-shadow: 4px 4px 8px #191919;
+    background-color: rgb(198, 196, 198) ;
 }
 .header .input{
-    height: 30px;
+    height: 40px;
     width: 200px; 
     border-radius: 10px;
+    border : 1px solid black;
+    padding: 5px;  
+}
+
+.header .input:focus{
+    outline: none;
 }
 
 .btn{
     padding: 10px;
     border-radius: 10px;
+    border: 1px solid gray;
 }
   
 .btn:hover{
@@ -32,7 +42,7 @@
 
 .main-container{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     overflow-x: hidden;
 }
 
@@ -50,9 +60,11 @@
 .tbl-con{
     display: flex;
     width: 100%;
-    height: 80%;
+    height: auto;
     justify-content: center;
     align-items: center;
+    padding-top: 45px;
+    overflow-y: scroll;
 }
 
 .tbl-body{
@@ -60,21 +72,29 @@
 }
 
 .tbl-data{
-    padding: 8px;
+    padding: 12px;
     border-bottom: 1px solid gray;
 }
 
 .del-btn , .cs-btn{
     padding: 8px;
     border-radius: 10px;
+    border: 1px solid gray;
+    margin-left: 10px;
+}
+.tblbody .sr{
+    font-weight: 600;
 }
 
 .del-btn:hover{
     background: rgb(242, 71, 71);
     color: white;
 }
-
 .cs-btn:hover{
     background-color: rgb(112, 112, 220);
     color: white;
+}
+
+.tbl-con{
+    background-image: linear-gradient(rgb(198, 196, 198) , white );
 }
